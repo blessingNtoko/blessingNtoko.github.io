@@ -242,18 +242,13 @@ nav #logo:hover span#changeColour {
 
 #my-work #works .work {
     align-self: center;
+    text-align: center;
     height: 65%;
     width: 30%;
-    border: black solid 2px;
     margin: 10px auto;
     border-radius: 20px;
-    background: linear-gradient(45deg, orange,#E02626);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, .2);
     transition: all .3s;
-}
-
-#my-work #works .work:hover {
-    transform: scale(1.05);
 }
 
 #my-work #works .work-1 {
@@ -287,17 +282,28 @@ nav #logo:hover span#changeColour {
 }
 
 #my-work #works .work .workText {
+    text-align: center;
     display: inline-block;
     position: absolute;
-    top: 50%;
-    left: 35%;
+    top: 45%;
+    /* left: 35%; */
     font-size: 40px;
-    color: white;
+    opacity: 0;
+    color: #E02626;
     transition: all .3s;
-    background-color:  #E02626;
-    border-radius: 5px;
-    padding: 10px auto;
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px 10px;
+    margin: auto;
     z-index: 1;
+}
+
+#my-work #works .work:hover {
+    transform: scale(1.05);
+}
+
+#my-work #works .work:hover .workText {
+    opacity: 1;
 }
 
 #contact-me #contact-form {
