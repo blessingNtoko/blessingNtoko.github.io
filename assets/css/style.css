@@ -277,7 +277,7 @@ nav #logo:hover span#changeColour {
     height: 100%;
     background-color: #47559e;
     border-radius: 20px;
-    opacity: .5;
+    opacity: .6;
     transition: all .3s;
 }
 
@@ -286,16 +286,21 @@ nav #logo:hover span#changeColour {
     display: inline-block;
     position: absolute;
     top: 45%;
-    /* left: 35%; */
+    left: 60%;
     font-size: 40px;
     opacity: 0;
-    color: #E02626;
+    color: white;
     transition: all .3s;
-    border: 2px solid white;
-    background-color: white;
+    background-color: #E02626;
     padding: 10px 10px;
     margin: auto;
     z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#my-work #works .work .workText a {
+    text-decoration: none;
+    color: white;
 }
 
 #my-work #works .work:hover {
