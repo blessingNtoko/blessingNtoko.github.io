@@ -252,12 +252,15 @@ nav #logo:hover span#changeColour {
     transition: all .3s;
 }
 
+#my-work #works .work:hover {
+    transform: scale(1.05);
+}
+
 #my-work #works .work-1 {
     background-image: url('../images/color.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: .7;
 }
 
 #my-work #works .work-2 {
@@ -265,7 +268,6 @@ nav #logo:hover span#changeColour {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: .7;
 }
 
 #my-work #works .work-3 {
@@ -273,7 +275,6 @@ nav #logo:hover span#changeColour {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: .7;
 }
 
 #my-work #works .work .workText {
@@ -283,22 +284,28 @@ nav #logo:hover span#changeColour {
     left: 35%;
     font-size: 40px;
     color: white;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all .3s;
-}
-
-#my-work #works .work:hover {
-    transform: scale(1.05);
-    opacity: 1;
-}
-
-#my-work #works .work:hover .workText {
-    opacity: 1;
+    border: 2px solid white;
+    padding: 5px auto;
+    z-index: 99999;
 }
 
 #my-work #works .work .overlay {
     width: 100%;
     height: 100%;
+    background-color: #47559e;
+    border-radius: 20px;
+    opacity: .5;
+    transition: all .3s;
+}
+
+#my-work #works .work .overlay:hover {
+    opacity: 0;
+}
+
+#my-work #works .work .overlay:hover .workText {
+    opacity: 1;
 }
 
 #contact-me #contact-form {
