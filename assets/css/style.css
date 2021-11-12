@@ -249,27 +249,21 @@ nav #logo:hover span#changeColour {
     border-radius: 20px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, .2);
     transition: all .3s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #my-work #works .work-1 {
     background-image: url('../images/color.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 #my-work #works .work-2 {
     background-image: url('../images/colorSplash.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 #my-work #works .work-3 {
     background-image: url('../images/embers.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 #my-work #works .work .overlay {
