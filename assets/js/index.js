@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const nav = document.getElementById('navigate');
 const letterN = document.getElementById('changeColour');
+let submitted = false;
 
 document.addEventListener('scroll', () => {
     if (window.scrollY) {
