@@ -307,11 +307,18 @@ nav #logo:hover span#changeColour {
     opacity: 1;
 }
 
-#contact-me #contact-form {
-    width: 750px;
-    margin: 30px auto;
-    text-align: justify;
-    font-size: 20px;
-    line-height: 30px;
+.contactDetails {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+.contactDetails .contactForm {
+    width: 60%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
 }
 
