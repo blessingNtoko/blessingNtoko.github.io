@@ -322,3 +322,27 @@ nav #logo:hover span#changeColour {
     height: 70vh;
 }
 
+.contactDetails .contactForm form {
+    border: 2px solid green;
+    text-align: center;
+    align-self: center;
+    margin-top: 5em;
+    width: 80%;
+    height: 70%;
+}
+
+.contactDetails .contactForm form .inputs {
+    border: 2px solid black;
+    /* height: 95%; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactDetails .contactForm form .inputs .input {
+    width: calc(100% - 1.5em);
+}
+
+.contactDetails .contactForm form .inputs.inputHalf {
+    width: calc(50% - 0.75em);
+}
+
