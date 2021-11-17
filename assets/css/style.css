@@ -423,6 +423,10 @@ nav #logo:hover span#changeColour {
     padding: 1em 0 0 1em;
 }
 
+.contactDetails .contactMethods div h1 svg {
+    width: 35px;
+}
+
 .contactDetails .contactMethods div p {
     display: inline-block;
     position: relative;
@@ -448,6 +452,7 @@ nav #logo:hover span#changeColour {
 
 footer {
     background-color: #47559e;
+    /* background-color: black; */
     height: 32%;
     margin-top: -.15em;
     color: white;
@@ -466,4 +471,27 @@ footer .insideFoot .icons {
     flex-direction: row;
     align-self: center;
 }
+
+footer .insideFoot .icons li {
+    list-style: none;
+}
+
+footer .insideFoot .icons li svg {
+    width: 50px;
+    margin-top: 5em;
+    margin-left: 2em;
+    color: white;
+    transition: all .3s;
+}
+
+footer .insideFoot .icons li svg:hover {
+    color: #E02626;
+}
+
+footer .insideFoot p {
+    margin-left: 6em;
+    margin-top: 6em;
+}
+
+
 
