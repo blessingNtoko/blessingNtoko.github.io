@@ -10,6 +10,7 @@ html, body {
     padding: 0;
     width: 100%;
     scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav {
@@ -311,12 +312,13 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 5em;
     border: 2px solid blue;
 }
 
 .contactDetails .contactForm {
     width: 60%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     height: 70vh;
@@ -341,16 +343,55 @@ nav #logo:hover span#changeColour {
 
 .contactDetails .contactForm form .inputs .input {
     border: 2px solid yellowgreen;
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
 }
 
 .contactDetails .contactForm form .inputHalf {
-    width: 49%;
-    padding: 1.5em 0  0 1.5em;
+    width: 40%;
+    padding: 2em 0  0 2em;
+    margin-left: 2em;
 }
 
+
+
 .contactDetails .contactForm form .inputs .msgInput {
-    width: 100%;
+    width: 84%;
     padding: 1.5em 0 1.5em 0;
+    margin-left: 4em;
 }
+
+.contactDetails .contactForm form label {
+    text-align: left;
+}
+
+.contactDetails .contactForm form input {
+    width: 90%;
+    height: 60px;
+    font-size: 25px;
+}
+
+.contactDetails .contactForm form textarea {
+    font-size: 15px;
+}
+
+.contactDetails .contactForm form button {
+    width: 15%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 20px;
+    /* background-color: black; */
+    color: black;
+    border: 2px solid #E02626;
+    transition: all .3s;
+    float: left;
+    margin-left: 5em;
+}
+
+.contactDetails .contactForm form button:hover {
+    background-color: #E02626;
+    color: white;
+}
+
 
