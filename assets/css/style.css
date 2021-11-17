@@ -26,7 +26,7 @@ nav {
 }
 
 nav.black {
-    background: rgba(0, 0, 0, .8);
+    background: rgba(71, 85, 158, .8);
     height: 100px;
     padding: 5px 100px;
 } 
@@ -120,7 +120,6 @@ nav #logo:hover span#changeColour {
 
 .parallax {
     width: 100%;
-    background-image: url(https://source.unsplash.com/random/1920x1080);
     min-height: 400px;
     opacity: 0.7;
     position: relative;
@@ -133,6 +132,14 @@ nav #logo:hover span#changeColour {
     */
     background-attachment: fixed;
     transition: all .3s;
+}
+
+.parallax1 {
+    background-image: url(https://source.unsplash.com/random/1920x1080);
+}
+
+.parallax2 {
+    background-image: url(https://source.unsplash.com/random/1920x1080);
 }
 
 .greeting {
@@ -418,20 +425,21 @@ nav #logo:hover span#changeColour {
 .contactDetails .contactMethods div h1 {
     display: inline-block;
     position: relative;
-    left: 2em;
+    /* left: 1em; */
     font-size: 30px;
     padding: 1em 0 0 1em;
 }
 
 .contactDetails .contactMethods div h1 svg {
-    width: 35px;
+    width: 30px;
+    color: #E02626
 }
 
 .contactDetails .contactMethods div p {
     display: inline-block;
     position: relative;
     top: -1.5em;
-    left: 5.1em;
+    left: 4.7em;
     font-size: 17px;
     padding-top: 0;
 }
@@ -442,7 +450,7 @@ nav #logo:hover span#changeColour {
     display: inline-block;
     position: relative;
     top: -1em;
-    left: 5.6em;
+    left: 5.2em;
     transition: all .3s;
 }
 
