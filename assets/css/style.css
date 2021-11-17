@@ -198,9 +198,8 @@ nav ul li svg:hover {
 .parallax {
     width: 100%;
     min-height: 400px;
-    opacity: 0.7;
+    opacity: .6;
     position: relative;
-    opacity: 1;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,6 +208,10 @@ nav ul li svg:hover {
     */
     background-attachment: fixed;
     transition: all .3s;
+}
+
+.parallax:hover {
+    opacity: 1;
 }
 
 .parallax1 {
