@@ -383,8 +383,8 @@ nav #logo:hover span#changeColour {
     border-radius: 5px;
     font-size: 20px;
     /* background-color: black; */
-    color: black;
-    border: 2px solid #E02626;
+    color: #E02626;
+    border: none;
     transition: all .3s;
     float: left;
     margin-left: 5em;
@@ -402,14 +402,68 @@ nav #logo:hover span#changeColour {
     /* margin-top: 5em; */
 }
 
-.contactDetails .contactMethods div{
-    margin-top: 7em;
-    margin-left: 5em;
-    width: 100%;
-    border-bottom: 1px solid black;
+.contactDetails .contactMethods hr {
+    width: 660px;
 }
 
-footer ul li {
+.contactDetails .contactMethods div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    height: calc(100% / 3);
+    /* padding: 0; */
+}
+
+.contactDetails .contactMethods div h1 {
+    display: inline-block;
+    position: relative;
+    left: 2em;
     font-size: 30px;
+    padding: 1em 0 0 1em;
+}
+
+.contactDetails .contactMethods div p {
+    display: inline-block;
+    position: relative;
+    top: -1.5em;
+    left: 5.1em;
+    font-size: 17px;
+    padding-top: 0;
+}
+
+.contactDetails .contactMethods div a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    top: -1em;
+    left: 5.6em;
+    transition: all .3s;
+}
+
+.contactDetails .contactMethods div a:hover {
+    color: #E02626;
+}
+
+footer {
+    background-color: #47559e;
+    height: 32%;
+    margin-top: -.15em;
+    color: white;
+}
+
+footer .insideFoot {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+footer .insideFoot .icons {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
 }
 
