@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+/* @import url(fontawesome-all.min.css); */
 
 @font-face {
     font-family: FlashBack-Demo;
@@ -312,8 +312,9 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 5em;
-    border: 2px solid blue;
+    border-bottom: 1px solid black;
+    /* margin-top: 5em; */
+    /* border: 2px solid blue; */
 }
 
 .contactDetails .contactForm {
@@ -325,7 +326,7 @@ nav #logo:hover span#changeColour {
 }
 
 .contactDetails .contactForm form {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     text-align: center;
     align-self: center;
     margin-top: 4em;
@@ -334,7 +335,7 @@ nav #logo:hover span#changeColour {
 }
 
 .contactDetails .contactForm form .inputs {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -342,7 +343,7 @@ nav #logo:hover span#changeColour {
 }
 
 .contactDetails .contactForm form .inputs .input {
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
     /* width: 100%; */
     display: flex;
     flex-direction: column;
@@ -394,4 +395,21 @@ nav #logo:hover span#changeColour {
     color: white;
 }
 
+
+
+.contactDetails .contactMethods {
+    border-left: 1px solid black;
+    /* margin-top: 5em; */
+}
+
+.contactDetails .contactMethods div{
+    margin-top: 7em;
+    margin-left: 5em;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+footer ul li {
+    font-size: 30px;
+}
 
