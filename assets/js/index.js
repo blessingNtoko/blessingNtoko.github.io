@@ -4,10 +4,10 @@ const letterN = document.getElementById('changeColour');
 const menu = document.getElementById('menu');
 const closeMenu = document.getElementById('closeMenu');
 const openMenu = document.getElementById('openMenu');
+const menuClicks = document.getElementsByClassName('menuClick');
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM Content Loaded');
-
 });
 
 document.addEventListener('scroll', () => {
@@ -30,4 +30,12 @@ openMenu.addEventListener('click', () => {
     menu.classList.add('divMenu');
     menu.classList.remove('hiddenNav');
     openMenu.classList.add('hiddenNav');
-})
+});
+
+for (let i = 0; i < menuClicks.length; i++) {
+    menuClicks[i].addEventListener('click', () => {
+        menu.classList.add('hiddenNav');
+        menu.classList.remove('divMenu');
+        openMenu.classList.remove('hiddenNav');
+    });
+}
