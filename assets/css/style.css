@@ -261,11 +261,11 @@ nav ul li svg:hover {
     transform: scale(1.2);
 }
 
-#about-me img {
+/* #about-me img {
     margin: 0;
     padding: 0;
     display: none;
-}
+} */
 
 .parallax {
     width: 100%;
@@ -278,7 +278,7 @@ nav ul li svg:hover {
     /* fixed = parallax
         scroll = normal    
     */
-    background-attachment: fixed;
+    background-attachment: scroll;
     transition: all .3s;
 }
 
@@ -292,6 +292,44 @@ nav ul li svg:hover {
 
 .parallax2 {
     background-image: url(https://source.unsplash.com/random/1920x1080);
+}
+
+#about-me {
+    display: flex;
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.info #about-text {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.info #toys {
+    text-align: center;
+    height: 350px;
+}
+
+.info #toys #toysImages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info #toys #toysImages img {
+    width: 125px;
+    height: 120px;
+    transition: all .3s;
+    align-self: auto;
 }
 
 @media only screen and (min-width: 786px) {
@@ -574,11 +612,6 @@ nav ul li svg:hover {
         text-align: center;
         font-size: 20px;
         line-height: 30px;
-    }
-    
-    #about-me img {
-        margin: 0;
-        padding: 0;
     }
     
     .info {
