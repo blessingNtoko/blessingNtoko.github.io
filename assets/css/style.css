@@ -11,6 +11,11 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.section {
+    width: 100%;
+    min-height: 100vh;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -120,11 +125,6 @@ nav #logo:hover span#changeColour {
 .divMenu ul li a.active:hover {
     color: #E02626;
     background-color: #FFF;
-}
-
-.section {
-    width: 100%;
-    min-height: 100vh;
 }
 
 .onhover:hover {
@@ -249,7 +249,7 @@ nav #logo:hover span#changeColour {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    /* margin-top: 10px; */
 }
 
 .info #about-text {
@@ -295,6 +295,7 @@ nav #logo:hover span#changeColour {
     height: 100%;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #my-work #works .work {
@@ -349,6 +350,138 @@ nav #logo:hover span#changeColour {
     text-decoration: none;
     color: white;
     padding: 5px 5px;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contactDetails .contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 70vh; */
+}
+
+.contactDetails .contactForm form {
+    text-align: center;
+    align-self: center;
+    margin-top: .5em;
+    width: 100%;
+    /* height: 80%; */
+}
+
+.contactDetails .contactForm form .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* margin: 2em 2em; */
+}
+
+.contactDetails .contactForm form .inputs .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactDetails .contactForm form .inputHalf {
+    padding: 10px 0  0 10px;
+}
+
+
+
+.contactDetails .contactForm form .inputs .msgInput {
+    width: 92.5%;
+    padding: 10px 0 0 10px;
+}
+
+.contactDetails .contactForm form label {
+    text-align: left;
+}
+
+.contactDetails .contactForm form input {
+    width: 92.5%;
+    height: 60px;
+    font-size: 20px;
+}
+
+.contactDetails .contactForm form textarea {
+    font-size: 20px;
+}
+
+.contactDetails .contactForm form button {
+    /* width: 20%; */
+    /* height: 10%; */
+    border-radius: 5px;
+    font-size: 20px;
+    color: #E02626;
+    border: 1px solid #E02626;
+    transition: all .3s;
+    float: left;
+    margin-top: 30px;
+    margin-left: 130px;
+    padding: 5px 5px;
+}
+
+.contactDetails .contactForm form button:hover {
+    background-color: #E02626;
+    color: white;
+}
+
+
+
+.contactDetails .contactMethods {
+    border-left: 1px solid black;
+}
+
+.contactDetails .contactMethods hr {
+    width: 660px;
+}
+
+.contactDetails .contactMethods div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+.contactDetails .contactMethods div h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    padding: 1em 0 0 1em;
+}
+
+.contactDetails .contactMethods div h1 svg {
+    width: 30px;
+    color: #E02626
+}
+
+.contactDetails .contactMethods div p {
+    display: inline-block;
+    position: relative;
+    top: -1.5em;
+    left: 4.7em;
+    font-size: 17px;
+    padding-top: 0;
+}
+
+.contactDetails .contactMethods div a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    top: -1em;
+    left: 5.2em;
+    transition: all .3s;
+}
+
+.contactDetails .contactMethods div a:hover {
+    color: #E02626;
 }
 
 @media only screen and (min-width: 786px) {
