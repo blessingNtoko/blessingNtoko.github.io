@@ -267,6 +267,33 @@ nav ul li svg:hover {
     display: none;
 }
 
+.parallax {
+    width: 100%;
+    min-height: 400px;
+    opacity: .6;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* fixed = parallax
+        scroll = normal    
+    */
+    background-attachment: fixed;
+    transition: all .3s;
+}
+
+.parallax:hover {
+    opacity: 1;
+}
+
+.parallax1 {
+    background-image: url(https://source.unsplash.com/random/1920x1080);
+}
+
+.parallax2 {
+    background-image: url(https://source.unsplash.com/random/1920x1080);
+}
+
 @media only screen and (min-width: 786px) {
     nav {
         position: fixed;
