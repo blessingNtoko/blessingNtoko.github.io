@@ -20,7 +20,8 @@ nav {
     padding: 5px 100px;
     box-sizing: border-box;
     transition: .3s;
-    z-index: 99;  
+    z-index: 99; 
+    display: flex; 
 }
 
 nav.blue {
@@ -34,14 +35,14 @@ span.white {
 }
 
 nav ul {
-    list-style: none;
+    /* list-style: none;
     float: right;
     margin: 0;
-    padding: 0;
-    display: flex;
+    padding: 0; */
+    display: none;
 }
 
-nav ul li {
+/* nav ul li {
     list-style: none;
     padding: 10px 50px;
 }
@@ -66,7 +67,7 @@ nav ul li a.active {
     background: #E02626;
     color: #FFF;
     border-radius: 5px;
-}
+} */
 
 nav #logo {
     padding: 10px 50px;
@@ -102,14 +103,15 @@ nav ul li svg:hover {
 }
 
 .hiddenNav {
+    display: none;
+}
+
+.burgerMenu {
+    width: 30px;
     display: block;
 }
 
 .burgerMenu {
-    display: block;
-}
-
-.burgerMenu li {
     padding: 10px 50px;
 }
 
