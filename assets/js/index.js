@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('scroll', () => {
     if (window.scrollY) {
-        nav.classList.add('black');
+        nav.classList.add('blue');
         letterN.classList.add('white');
     } else {
-        nav.classList.remove('black');
+        nav.classList.remove('blue');
         letterN.classList.remove('white');
     }
 });
