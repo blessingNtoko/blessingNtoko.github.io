@@ -302,7 +302,7 @@ nav ul li svg:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .info #about-text {
@@ -326,10 +326,21 @@ nav ul li svg:hover {
 }
 
 .info #toys #toysImages img {
-    width: 125px;
-    height: 120px;
-    transition: all .3s;
-    align-self: auto;
+    width: 180px;
+}
+
+.info #toys #toysImages img#shiftmongo {
+    margin-left: 4em;
+}
+
+.info #toys #toysImages img#shiftexpress {
+    margin-left: 6em;
+}
+
+.info #toys #toysImages svg {
+    width: 100px;
+    padding: 10px 10px;
+    margin-left: .25em;
 }
 
 @media only screen and (min-width: 786px) {
