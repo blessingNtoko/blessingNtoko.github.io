@@ -736,16 +736,17 @@ footer .insideFoot .icons li svg:hover {
         text-align: center;
         position: relative;
         top: 45%;
-        left: 50%;
-        /* transform: translate(-50%, -50%); */
     }
     
     .header h1 {
+        position: relative;
+        left: 30%;
         color: #FFF;
         font-family: FlashBack-Demo;
         font-size: 180px;
         letter-spacing: 10px;
         font-weight: normal;
+        text-align: center;
     }
     
     .highlight {
