@@ -263,6 +263,10 @@ nav #logo:hover span#changeColour {
     line-height: 25px;
 }
 
+.info #about-text p a {
+    color: #E02626;
+}
+
 
 .info #toys {
     text-align: center;
