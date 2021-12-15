@@ -243,6 +243,11 @@ nav #logo:hover span#changeColour {
 
 #about-me {
     display: flex;
+    flex-direction: column;
+}
+
+#about-me h2 {
+    text-align: center;
 }
 
 .info {
@@ -287,6 +292,10 @@ nav #logo:hover span#changeColour {
     width: 100px;
     padding: 10px 10px;
     margin-left: .25em;
+}
+
+#my-work h2 {
+    text-align: center;
 }
 
 #my-work #works {
@@ -483,7 +492,6 @@ footer .insideFoot {
 footer .insideFoot .icons {
     display: flex;
     flex-direction: row;
-    /* align-self: center; */
 }
 
 footer .insideFoot .icons li {
@@ -492,7 +500,6 @@ footer .insideFoot .icons li {
 
 footer .insideFoot .icons li svg {
     width: 50px;
-    /* margin-top: 10px; */
     margin: 5px;
     color: white;
     transition: all .3s;
@@ -513,9 +520,11 @@ footer .insideFoot .icons li svg:hover {
         box-sizing: border-box;
         transition: .3s;
         z-index: 99;
+        display: flex;
+        flex-direction: row;
     }
     
-    nav.black {
+    nav.blue {
         background: rgba(71, 85, 158, .8);
         height: 100px;
         padding: 5px 100px;
@@ -528,6 +537,7 @@ footer .insideFoot .icons li svg:hover {
     nav ul {
         list-style: none;
         float: right;
+        align-self: flex-end;
         margin: 0;
         padding: 0;
         display: flex;
@@ -546,7 +556,7 @@ footer .insideFoot .icons li svg:hover {
         transition: .3s;
     }
     
-    nav.black ul li a {
+    nav.blue ul li a {
         color: #FFF;
     }
     
