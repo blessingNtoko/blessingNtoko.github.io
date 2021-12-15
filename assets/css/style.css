@@ -535,9 +535,9 @@ footer .insideFoot .icons li svg:hover {
     }
     
     nav ul {
+        position: relative;
+        left: 700px;
         list-style: none;
-        float: right;
-        align-self: flex-end;
         margin: 0;
         padding: 0;
         display: flex;
