@@ -248,6 +248,7 @@ nav #logo:hover span#changeColour {
 
 #about-me h2 {
     text-align: center;
+    margin-bottom: -5px;
 }
 
 .info {
