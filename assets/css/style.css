@@ -852,7 +852,6 @@ footer .insideFoot .icons li svg:hover {
     
     #my-work #works {
         width: 100%;
-        /* height: 100%; */
         display: flex;
         flex-direction: row;
     }
@@ -1039,8 +1038,6 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails .contactMethods div p {
         display: inline-block;
         position: relative;
-        /* top: -1.5em; */
-        /* left: 4.7em; */
         font-size: 17px;
         padding-top: 0;
     }
@@ -1049,9 +1046,6 @@ footer .insideFoot .icons li svg:hover {
         text-decoration: none;
         color: black;
         display: inline-block;
-        /* position: relative; */
-        /* top: -1em; */
-        /* left: 5.2em; */
         transition: all .3s;
     }
     
@@ -1100,7 +1094,3 @@ footer .insideFoot .icons li svg:hover {
         margin-top: 6em;
     }
 }
-
-
-
-
