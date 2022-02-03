@@ -1234,6 +1234,7 @@ footer .insideFoot .icons li svg:hover {
         min-height: 400px;
         opacity: .6;
         position: relative;
+        background-image: url(https://source.unsplash.com/random/1920x1080);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1246,14 +1247,6 @@ footer .insideFoot .icons li svg:hover {
     
     .parallax:hover {
         opacity: 1;
-    }
-    
-    .parallax1 {
-        background-image: url(https://source.unsplash.com/random/1920x1080);
-    }
-    
-    .parallax2 {
-        background-image: url(https://source.unsplash.com/random/1920x1080);
     }
     
     .greeting {
