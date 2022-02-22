@@ -663,7 +663,7 @@ nav #logo:hover span#changeColour {
     text-align: center;
     position: absolute;
     top: 29%;
-    left: 54%;
+    left: 52%;
     transform: translate(-50%, -50%);
     color: #FFF;
     padding: 20px 30px;
@@ -675,7 +675,7 @@ nav #logo:hover span#changeColour {
     text-align: center;
     position: absolute;
     top: 45%;
-    left: 57%;
+    left: 55%;
     transform: translate(-50%, -50%);
     width: 90%;
     display: flex;
@@ -699,10 +699,10 @@ nav #logo:hover span#changeColour {
 .tagline {
     position: absolute;
     top: 63%;
-    left: 53%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 
 .tagline p {
