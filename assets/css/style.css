@@ -1128,8 +1128,8 @@ nav #logo:hover span#changeColour {
 .divMenu svg {
     color: white;
     width: 25px;
-    align-self: flex-end;
-    margin-right: 2em;
+    /* align-self: flex-end; */
+    margin-right: 4em;
     margin-top: 1.5em;
 }
 
@@ -1262,7 +1262,7 @@ nav #logo:hover span#changeColour {
     /* fixed = parallax
         scroll = normal    
     */
-    background-attachment: fixed;
+    background-attachment: scroll;
     transition: all .3s;
 }
 
@@ -1299,7 +1299,7 @@ nav #logo:hover span#changeColour {
     text-align: center;
     font-size: 22px;
     line-height: 30px;
-    margin-left: 27px;
+    margin-left: 15px;
 }
 
 .info #about-text p a {
@@ -1310,6 +1310,7 @@ nav #logo:hover span#changeColour {
 .info #toys {
     text-align: center;
     height: 400px;
+    margin-left: 10%;
 }
 
 .info #toys #toysImages {
@@ -1344,11 +1345,12 @@ nav #logo:hover span#changeColour {
 }
 
 #my-work #works {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-left: 5%;
 }
 
 #my-work #works .work {
@@ -1419,9 +1421,10 @@ nav #logo:hover span#changeColour {
 }
 
 .contactDetails .contactForm {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
 }
 
 .contactDetails .contactForm form {
@@ -1476,12 +1479,13 @@ nav #logo:hover span#changeColour {
     transition: all .3s;
     /* float: left; */
     margin-top: 30px;
-    margin-left: 205px;
+    margin-left: 43%;
     padding: 5px 5px;
 }
 
 .contactDetails .contactMethods {
-    margin-top: 2em;;
+    margin-top: 2em;
+    margin-left: -1%;
 }
 
 .contactDetails .contactMethods hr {
@@ -1491,8 +1495,9 @@ nav #logo:hover span#changeColour {
 .contactDetails .contactMethods div{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: calc(100% / 3);
+    margin-left: 7.5%;
 }
 
 .contactDetails .contactMethods div h1 {
@@ -1538,7 +1543,7 @@ footer .insideFoot {
 footer .insideFoot .icons {
     display: flex;
     flex-direction: row;
-    margin-left: 90px;
+    margin-left: 23%;
 }
 
 footer .insideFoot .icons li {
