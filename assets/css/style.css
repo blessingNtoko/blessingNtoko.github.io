@@ -2593,9 +2593,14 @@ footer .insideFoot .icons li svg:hover {
     
     .contactDetails .contactForm form .inputs {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* margin: 2em 2em; */
+    }
+
+    .contactDetails .contactForm form .inputs .inputHalves {
+        display: flex;
         flex-direction: row;
-        margin: 2em 2em;
     }
     
     .contactDetails .contactForm form .inputs .input {
