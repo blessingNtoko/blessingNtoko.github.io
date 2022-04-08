@@ -2457,6 +2457,7 @@ footer .insideFoot .icons li svg:hover {
     .info #about-text {
         width: 750px;
         margin: 30px auto;
+        margin-left: 5%;
         text-align: center;
         font-size: 25px;
         line-height: 50px;
@@ -2649,7 +2650,7 @@ footer .insideFoot .icons li svg:hover {
         color: #E02626;
         border: none;
         transition: all .3s;
-        margin-left: 10%;
+        margin-left: 8%;
         border: 1px solid #E02626;
     }
     
