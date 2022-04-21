@@ -560,7 +560,6 @@ nav #logo {
     font-family: FlashBack-Demo;
     font-size: 45px;
     width: 10%;
-    /* margin-left: 7%; */
 }
 
 nav #logo a {
@@ -605,7 +604,7 @@ nav #logo:hover span#changeColour {
     color: white;
     width: 25px;
     align-self: flex-end;
-    margin-right: 2em;
+    margin-right: 8em;
     margin-top: 1.5em;
 }
 
@@ -667,7 +666,6 @@ nav #logo:hover span#changeColour {
     color: #FFF;
     padding: 20px 30px;
     font-size: 30px;
-    /* border-radius: 5px; */
 }
 
 .header {
@@ -761,7 +759,6 @@ nav #logo:hover span#changeColour {
 
 #about-me h2 {
     text-align: center;
-    /* margin-bottom: -2px; */
 }
 
 .info {
@@ -772,10 +769,10 @@ nav #logo:hover span#changeColour {
 
 .info #about-text {
     width: 90%;
-    text-align: justify;
+    text-align: center;
     font-size: 22px;
     line-height: 30px;
-    margin-left: 47px;
+    margin-left: 30px;
 }
 
 .info #about-text p a {
@@ -825,15 +822,16 @@ nav #logo:hover span#changeColour {
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-left: 3%;
+    justify-content: space-around;
+    /* text-align: center; */
+    /* margin-left: 3%; */
 }
 
 #my-work #works .work {
     align-self: center;
     text-align: center;
     height: 550px;
-    width: 70%;
+    width: 60%;
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, .2);
@@ -864,12 +862,12 @@ nav #logo:hover span#changeColour {
 }
 
 #my-work #works .work .workText {
-    width: 60%;
+    width: 80%;
     text-align: center;
     display: inline-block;
     position: relative;
-    top: -55%;
-    font-size: 30px;
+    top: -60%;
+    font-size: 20px;
     color: white;
     transition: all .3s;
     background-color: #E02626;
@@ -900,7 +898,7 @@ nav #logo:hover span#changeColour {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
+    /* margin-left: 3%; */
 }
 
 .contactDetails .contactForm form {
@@ -961,7 +959,7 @@ nav #logo:hover span#changeColour {
 
 .contactDetails .contactMethods {
     margin-top: 2em;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 .contactDetails .contactMethods hr {
@@ -1125,7 +1123,6 @@ nav #logo:hover span#changeColour {
 .divMenu svg {
     color: white;
     width: 25px;
-    /* align-self: flex-end; */
     margin-right: 4em;
     margin-top: 1.5em;
 }
@@ -1188,7 +1185,6 @@ nav #logo:hover span#changeColour {
     color: #FFF;
     padding: 20px 30px;
     font-size: 30px;
-    /* border-radius: 5px; */
 }
 
 .header {
@@ -1282,7 +1278,6 @@ nav #logo:hover span#changeColour {
 
 #about-me h2 {
     text-align: center;
-    /* margin-bottom: -2px; */
 }
 
 .info {
@@ -1296,8 +1291,8 @@ nav #logo:hover span#changeColour {
     text-align: center;
     font-size: 22px;
     line-height: 30px;
-    margin-left: 15px;
-    text-align: justify;
+    margin-left: 5%;
+    text-align: center;
 }
 
 .info #about-text p a {
@@ -1348,15 +1343,14 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: 5%;
 }
 
 #my-work #works .work {
     align-self: center;
     text-align: center;
     height: 550px;
-    width: 70%;
-    margin: 10px auto;
+    width: 60%;
+    margin-left: 26%;
     border-radius: 10px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, .2);
     transition: all .3s;
@@ -1386,12 +1380,12 @@ nav #logo:hover span#changeColour {
 }
 
 #my-work #works .work .workText {
-    width: 60%;
+    width: 80%;
     text-align: center;
     display: inline-block;
     position: relative;
-    top: -55%;
-    font-size: 30px;
+    top: -60%;
+    font-size: 20px;
     color: white;
     transition: all .3s;
     background-color: #E02626;
@@ -1608,7 +1602,7 @@ footer .insideFoot .icons li svg:hover {
     
     nav ul li {
         list-style: none;
-        padding: 10px 15px;
+        padding: 10px 10px;
     }
     
     nav ul li a {
@@ -1640,7 +1634,7 @@ footer .insideFoot .icons li svg:hover {
         width: 10%;
         display: inline-block;
         text-align: center;
-        margin-left: -10%;
+        /* margin-left: -10%; */
     }
     
     nav #logo a {
