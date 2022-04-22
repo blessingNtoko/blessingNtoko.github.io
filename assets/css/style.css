@@ -2484,9 +2484,10 @@ footer .insideFoot .icons li svg:hover {
     }
     
     #my-work #works {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
     
     #my-work #works .work {
@@ -2494,7 +2495,7 @@ footer .insideFoot .icons li svg:hover {
         text-align: center;
         height: 65%;
         width: 30%;
-        margin: 10px auto;
+        /* margin: 10px auto; */
         border-radius: 20px;
         box-shadow: 5px 10px 5px rgba(0, 0, 0, .2);
         transition: all .3s;
@@ -2530,7 +2531,7 @@ footer .insideFoot .icons li svg:hover {
         position: absolute;
         top: 50%;
         left: 50%;
-        font-size: 30px;
+        font-size: 20px;
         opacity: 0;
         color: white;
         transition: all .3s;
