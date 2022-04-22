@@ -1889,16 +1889,17 @@ footer .insideFoot .icons li svg:hover {
     }
     
     #my-work #works {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
     
     #my-work #works .work {
         align-self: center;
         text-align: center;
-        height: 50%;
-        width: calc(100% / 3);
+        height: 60%;
+        /* width: calc(100% / 3); */
         margin: 10px;
         margin-top: -20%;
         border-radius: 20px;
@@ -1936,7 +1937,7 @@ footer .insideFoot .icons li svg:hover {
         position: absolute;
         top: 50%;
         left: 50%;
-        font-size: 30px;
+        font-size: 20px;
         opacity: 0;
         color: white;
         transition: all .3s;
@@ -2247,7 +2248,7 @@ footer .insideFoot .icons li svg:hover {
         display: none;
     }
     
-    .burgerMenu li {
+    /* .burgerMenu li {
         padding: 10px 50px;
     }
     
@@ -2303,7 +2304,7 @@ footer .insideFoot .icons li svg:hover {
     .divMenu ul li a.active:hover {
         color: #E02626;
         background-color: #FFF;
-    }
+    } */
     
     .section {
         width: 100%;
@@ -2365,13 +2366,15 @@ footer .insideFoot .icons li svg:hover {
         padding: 0;
         width: 90%;
         text-align: center;
-        position: relative;
+        position: absolute;
         top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .header h1 {
         position: relative;
-        left: 45%;
+        left: 25%;
         color: #FFF;
         font-family: FlashBack-Demo;
         font-size: 180px;
@@ -2428,17 +2431,18 @@ footer .insideFoot .icons li svg:hover {
         text-align: center;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-self: center;
         width: 100%;
-        margin-top: 10em;
+        margin-top: 5%;
     }
 
     .info #about-text {
-        width: 750px;
+        width: 50%;
         margin: 30px auto;
         margin-left: 5%;
         text-align: center;
-        font-size: 25px;
+        font-size: 23px;
         line-height: 50px;
         text-align: justify;
     }
@@ -2446,8 +2450,8 @@ footer .insideFoot .icons li svg:hover {
     
     .info #toys {
         text-align: center;
-        margin-left: 150px;
-        width: 50%;
+        /* margin-left: 150px; */
+        width: 80%;
     }
     
     .info #toys #toysImages svg {
