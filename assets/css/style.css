@@ -373,7 +373,6 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-bottom: 1px solid black;
     margin-top: 15px;
     text-align: center;
 }
@@ -889,7 +888,6 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-bottom: 1px solid black;
     margin-top: 12px;
     text-align: center;
 }
@@ -1407,7 +1405,6 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-bottom: 1px solid black;
     margin-top: 12px;
     text-align: center;
 }
@@ -1972,9 +1969,7 @@ footer .insideFoot .icons li svg:hover {
         height: 60%;
         margin: 0;
         padding: 0;
-        border-bottom: 1px solid black;
         text-align: center;
-
     }
     
     .contactDetails .contactForm {
@@ -2248,64 +2243,6 @@ footer .insideFoot .icons li svg:hover {
         display: none;
     }
     
-    /* .burgerMenu li {
-        padding: 10px 50px;
-    }
-    
-    .divMenu {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        z-index: 999;
-        text-align: center;
-        background-color:rgba(0, 0, 0, .9);
-        transition: all .3s;
-    }
-    
-    .divMenu svg {
-        color: white;
-        width: 20px;
-        align-self: flex-end;
-        margin-right: 2em;
-        margin-top: 1em;
-    }
-    
-    .divMenu svg:hover {
-        cursor: pointer;
-    }
-    
-    .divMenu ul {
-        position: relative;
-        top: 25%;
-    
-    }
-    
-    .divMenu ul li {
-        list-style: none;
-        font-size: 30px;
-        margin-bottom: 2em;
-    }
-    
-    .divMenu ul li a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    .divMenu ul li a.active {
-        background: #E02626;
-        color: #FFF;
-        border-radius: 5px;
-        transition: all .3s;
-        padding: .5em
-    }
-    
-    .divMenu ul li a.active:hover {
-        color: #E02626;
-        background-color: #FFF;
-    } */
-    
     .section {
         width: 100%;
         height: 100vh;
@@ -2488,6 +2425,7 @@ footer .insideFoot .icons li svg:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 7%;
     }
     
     #my-work #works .work {
@@ -2562,16 +2500,20 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails {
         display: flex;
         flex-direction: row;
-        width: 90%;
-        border-bottom: 1px solid black;
+        justify-content: space-around;
+        width: 100%;
         text-align: center;
+        height: 70vh;
+        margin-top: 7%;
     }
     
     .contactDetails .contactForm {
-        width: 60%;
+        margin: 0;
+        margin-top: 7%;
+        width: 80%;
         display: flex;
         flex-direction: column;
-        height: 70vh;
+        height: 90%;
     }
     
     .contactDetails .contactForm form {
@@ -2585,12 +2527,15 @@ footer .insideFoot .icons li svg:hover {
         display: flex;
         /* flex-wrap: wrap; */
         flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
         /* margin: 2em 2em; */
     }
 
     .contactDetails .contactForm form .inputs .inputHalves {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     
     .contactDetails .contactForm form .inputs .input {
@@ -2600,16 +2545,15 @@ footer .insideFoot .icons li svg:hover {
     
     .contactDetails .contactForm form .inputHalf {
         width: 40%;
-        padding: 2em 0  0 2em;
-        margin-left: 2em;
+        padding: 2em 0  0 1em;
+        /* margin-left: 2em; */
     }
     
     
     
     .contactDetails .contactForm form .inputs .msgInput {
-        width: 85.5%;
-        padding: 1.5em 0 1.5em 0;
-        margin-left: 4em;
+        width: 96%;
+        padding: 1.5em 0 0 1em;
     }
     
     .contactDetails .contactForm form label {
@@ -2627,14 +2571,14 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .contactDetails .contactForm form button {
+        margin: 0 ;
         width: 15%;
-        height: 10%;
+        height: 50px;
         border-radius: 5px;
         font-size: 20px;
         color: #E02626;
-        border: none;
         transition: all .3s;
-        margin-left: 8%;
+        /* margin-left: 8%; */
         border: 1px solid #E02626;
     }
     
@@ -2650,13 +2594,14 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .contactDetails .contactMethods hr {
-        width: 120%;
+        margin: 0;
+        width: 95%;
     }
     
     .contactDetails .contactMethods div{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: calc(90% / 3);
     }
     
