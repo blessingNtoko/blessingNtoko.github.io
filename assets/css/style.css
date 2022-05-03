@@ -157,18 +157,23 @@ nav #logo:hover span#changeColour {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 90%;
     text-align: center;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .header h1 {
+    position: relative;
+    left: 0%;
     color: #FFF;
     font-family: FlashBack-Demo;
     font-size: 85px;
@@ -254,10 +259,15 @@ nav #logo:hover span#changeColour {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5%;
+    height: 80%;
+    width: 100%;
 }
 
 .info #about-text {
-    width: 100%;
+    margin: 5%;
+    width: 90%;
     text-align: center;
     font-size: 15px;
     line-height: 25px;
@@ -668,18 +678,21 @@ nav #logo:hover span#changeColour {
 }
 
 .header {
-    text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
 }
 
 .header h1 {
+    position: relative;
+    left: 0%;
     color: #FFF;
     font-family: FlashBack-Demo;
     font-size: 120px;
@@ -1186,18 +1199,23 @@ nav #logo:hover span#changeColour {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     text-align: center;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 90%;
 }
 
 .header h1 {
+    position: relative;
+    left: 0%;
     color: #FFF;
     font-family: FlashBack-Demo;
     font-size: 120px;
@@ -1771,16 +1789,22 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
         width: 90%;
         text-align: center;
-        position: relative;
+        position: absolute;
         top: 45%;
-        left: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .header h1 {
         position: relative;
-        left: 25%;
+        left: 0%;
         color: #FFF;
         font-family: FlashBack-Demo;
         font-size: 180px;
@@ -2317,7 +2341,6 @@ footer .insideFoot .icons li svg:hover {
     .header h1 {
         position: relative;
         left: 0%;
-        align-self: center;
         color: #FFF;
         font-family: FlashBack-Demo;
         font-size: 180px;
