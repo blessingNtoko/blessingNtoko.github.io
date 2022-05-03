@@ -918,9 +918,7 @@ nav #logo:hover span#changeColour {
 
 .contactDetails .contactForm {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* margin-left: 3%; */
+    justify-content: center;
 }
 
 .contactDetails .contactForm form {
@@ -942,15 +940,24 @@ nav #logo:hover span#changeColour {
     flex-direction: column;
 }
 
+.contactDetails .contactForm form .inputs .inputHalves {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .contactDetails .contactForm form .inputHalf {
-    padding: 10px 0  0 10px;
+    padding: 10px 0  0 0;
 }
 
 
 
 .contactDetails .contactForm form .inputs .msgInput {
     width: 92.5%;
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 0;
+    align-self: flex-start;
 }
 
 .contactDetails .contactForm form label {
@@ -975,8 +982,10 @@ nav #logo:hover span#changeColour {
     transition: all .3s;
     /* float: left; */
     margin-top: 30px;
-    margin-left: 205px;
+    margin-left: -3%;
     padding: 5px 5px;
+    align-self: initial;
+    width: 70%;
 }
 
 .contactDetails .contactMethods {
@@ -1311,6 +1320,8 @@ nav #logo:hover span#changeColour {
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .info #about-text {
@@ -1439,10 +1450,12 @@ nav #logo:hover span#changeColour {
 }
 
 .contactDetails .contactForm {
-    width: 90%;
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    align-self: center;
 }
 
 .contactDetails .contactForm form {
@@ -1450,7 +1463,8 @@ nav #logo:hover span#changeColour {
     align-self: center;
     margin-top: .5em;
     width: 90%;
-    margin-left: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .contactDetails .contactForm form .inputs {
@@ -2548,12 +2562,12 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .contactDetails .contactForm {
+        display: flex;
+        flex-direction: column;
         margin: 0;
         padding: 0;
         margin-top: 7%;
         width: 75%;
-        display: flex;
-        flex-direction: column;
         height: 90%;
     }
     
