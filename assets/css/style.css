@@ -2022,9 +2022,9 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
-        height: 60%;
+        height: 70vh;
         margin: 0;
         margin-top: 10%;
         padding: 0;
@@ -2032,11 +2032,12 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .contactDetails .contactForm {
-        margin: 0;
-        width: 40%;
         display: flex;
         flex-direction: column;
-        height: 50%;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        height: 90%;
     }
     
     .contactDetails .contactForm form {
@@ -2047,23 +2048,31 @@ footer .insideFoot .icons li svg:hover {
     
     .contactDetails .contactForm form .inputs {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        justify-content: space-evenly;
     }
     
     .contactDetails .contactForm form .inputs .input {
         display: flex;
         flex-direction: column;
     }
+
+    .contactDetails .contactForm form .inputs .inputHalves {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
     
     .contactDetails .contactForm form .inputHalf {
-        padding: 10px 0  0 10px;
+        padding: 10px 0  0 0;
 
     }
     
     .contactDetails .contactForm form .inputs .msgInput {
         width: 90%;
-        padding: 10px 0 0 10px;
+        padding: 10px 0 0 0;
+        align-self: flex-start;
     }
     
     .contactDetails .contactForm form label {
@@ -2088,7 +2097,6 @@ footer .insideFoot .icons li svg:hover {
         color: #E02626;
         border: none;
         transition: all .3s;
-        margin-left: 35%;
         border: 1px solid #E02626;
     }
     
@@ -2593,16 +2601,17 @@ footer .insideFoot .icons li svg:hover {
         height: 100%;
     }
 
+    
+    .contactDetails .contactForm form .inputs .input {
+        display: flex;
+        flex-direction: column;
+    }
+
     .contactDetails .contactForm form .inputs .inputHalves {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
-    }
-    
-    .contactDetails .contactForm form .inputs .input {
-        display: flex;
-        flex-direction: column;
     }
     
     .contactDetails .contactForm form .inputHalf {
