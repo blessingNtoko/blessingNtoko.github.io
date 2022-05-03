@@ -528,7 +528,8 @@ footer .insideFoot .icons li {
 
 footer .insideFoot .icons li svg {
     width: 50px;
-    margin: 5px;
+    margin-top: 3em;
+    margin-left: 2em;
     color: white;
     transition: all .3s;
 }
@@ -1050,7 +1051,7 @@ footer .insideFoot {
 footer .insideFoot .icons {
     display: flex;
     flex-direction: row;
-    margin-left: 90px;
+    justify-content: center;
 }
 
 footer .insideFoot .icons li {
@@ -1059,7 +1060,9 @@ footer .insideFoot .icons li {
 
 footer .insideFoot .icons li svg {
     width: 50px;
-    margin: 10px;
+    /* margin: 10px; */
+    margin-top: 3em;
+    margin-left: 1em;
     color: white;
     transition: all .3s;
 }
@@ -1584,9 +1587,11 @@ footer .insideFoot {
 }
 
 footer .insideFoot .icons {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
-    margin-left: 23%;
+    justify-content: center;
 }
 
 footer .insideFoot .icons li {
@@ -1595,7 +1600,8 @@ footer .insideFoot .icons li {
 
 footer .insideFoot .icons li svg {
     width: 50px;
-    margin: 10px;
+    margin-top: 4em;
+    margin-left: 2em;
     color: white;
     transition: all .3s;
 }
@@ -2166,14 +2172,16 @@ footer .insideFoot .icons li svg:hover {
         display: flex;
         flex-direction: column;
         height: 100%;
-        /* text-align: center; */
+        text-align: center;
     }
     
     footer .insideFoot .icons {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-self: center;
-        margin-left: 2%;
+        margin: 0;
+        padding: 0;
     }
     
     footer .insideFoot .icons li {
@@ -2193,7 +2201,6 @@ footer .insideFoot .icons li svg:hover {
     }
     
     footer .insideFoot p {
-        margin-left: 6em;
         margin-top: 6em;
     }
 }
