@@ -360,8 +360,8 @@ nav #logo:hover span#changeColour {
     text-align: center;
     display: inline-block;
     position: relative;
-    top: -55%;
-    font-size: 25px;
+    bottom: 65%;
+    font-size: 20px;
     color: white;
     transition: all .3s;
     background-color: #E02626;
@@ -402,8 +402,8 @@ nav #logo:hover span#changeColour {
 
 .contactDetails .contactForm form .inputs {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 }
 
 .contactDetails .contactForm form .inputs .input {
@@ -411,15 +411,24 @@ nav #logo:hover span#changeColour {
     flex-direction: column;
 }
 
+.contactDetails .contactForm form .inputHalves {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contactDetails .contactForm form .inputHalf {
-    padding: 10px 0  0 10px;
+    padding: 10px 0  0 0;
 }
 
 
 
 .contactDetails .contactForm form .inputs .msgInput {
-    width: 92.5%;
-    padding: 10px 0 0 10px;
+    width: 90%;
+    padding: 10px 0 0 0;
 }
 
 .contactDetails .contactForm form label {
@@ -427,13 +436,14 @@ nav #logo:hover span#changeColour {
 }
 
 .contactDetails .contactForm form input {
-    width: 92.5%;
+    width: 100%;
     height: 60px;
     font-size: 20px;
 }
 
 .contactDetails .contactForm form textarea {
     font-size: 20px;
+    width: 101%;
 }
 
 .contactDetails .contactForm form button {
@@ -444,7 +454,8 @@ nav #logo:hover span#changeColour {
     transition: all .3s;
     float: left;
     margin-top: 30px;
-    margin-left: 135px;
+    width: 90%;
+    /* margin-left: 135px; */
     padding: 5px 5px;
 }
 
@@ -2538,6 +2549,7 @@ footer .insideFoot .icons li svg:hover {
     
     .contactDetails .contactForm {
         margin: 0;
+        padding: 0;
         margin-top: 7%;
         width: 75%;
         display: flex;
@@ -2555,13 +2567,14 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails .contactForm form .inputs {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         height: 100%;
     }
 
     .contactDetails .contactForm form .inputs .inputHalves {
         display: flex;
         flex-direction: row;
+        width: 100%;
         justify-content: space-between;
     }
     
@@ -2572,14 +2585,15 @@ footer .insideFoot .icons li svg:hover {
     
     .contactDetails .contactForm form .inputHalf {
         width: 40%;
-        padding: 2em 0  0 1em;
+        padding: 2em 0  0 0;
     }
     
     
     
     .contactDetails .contactForm form .inputs .msgInput {
         width: 95.5%;
-        padding: 1.5em 0 0 1em;
+        padding: 1.5em 0 0 0;
+        align-self: flex-start;
     }
     
     .contactDetails .contactForm form label {
@@ -2587,7 +2601,7 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .contactDetails .contactForm form input {
-        width: 91%;
+        width: 90%;
         height: 60px;
         font-size: 25px;
     }
@@ -2604,8 +2618,8 @@ footer .insideFoot .icons li svg:hover {
         font-size: 20px;
         color: #E02626;
         transition: all .3s;
-        margin-left: 2%;
         border: 1px solid #E02626;
+        align-self: flex-start;
     }
     
     .contactDetails .contactForm form button:hover {
