@@ -529,7 +529,7 @@ footer .insideFoot .icons li {
 footer .insideFoot .icons li svg {
     width: 50px;
     margin-top: 3em;
-    margin-left: 2em;
+    margin-left: 1em;
     color: white;
     transition: all .3s;
 }
@@ -2733,7 +2733,7 @@ footer .insideFoot .icons li svg:hover {
     footer .insideFoot .icons {
         display: flex;
         flex-direction: row;
-        align-self: center;
+        justify-content: center;
     }
     
     footer .insideFoot .icons li {
@@ -2743,7 +2743,7 @@ footer .insideFoot .icons li svg:hover {
     footer .insideFoot .icons li svg {
         width: 50px;
         margin-top: 5em;
-        margin-left: 2em;
+        margin-left: 3em;
         color: white;
         transition: all .3s;
     }
