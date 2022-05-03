@@ -1471,6 +1471,7 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-self: center;
 }
 
 .contactDetails .contactForm form .inputs .input {
@@ -1478,15 +1479,24 @@ nav #logo:hover span#changeColour {
     flex-direction: column;
 }
 
-.contactDetails .contactForm form .inputHalf {
-    padding: 10px 0  0 10px;
+.contactDetails .contactForm form .inputs .inputHalves {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    justify-content: space-between;
+    align-self: flex-end;
 }
 
-
+.contactDetails .contactForm form .inputHalf {
+    padding: 10px 0  0 0;
+    align-self: center;
+    width: 100%;
+}
 
 .contactDetails .contactForm form .inputs .msgInput {
-    width: 92.5%;
-    padding: 10px 0 0 10px;
+    width: 92%;
+    padding: 10px 0 0 0;
+    align-self: center;
 }
 
 .contactDetails .contactForm form label {
@@ -1494,7 +1504,7 @@ nav #logo:hover span#changeColour {
 }
 
 .contactDetails .contactForm form input {
-    width: 92.5%;
+    width: 96.5%;
     height: 60px;
     font-size: 20px;
 }
@@ -1509,9 +1519,7 @@ nav #logo:hover span#changeColour {
     color: #E02626;
     border: 1px solid #E02626;
     transition: all .3s;
-    /* float: left; */
     margin-top: 30px;
-    margin-left: 43%;
     padding: 5px 5px;
 }
 
