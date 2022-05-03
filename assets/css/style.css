@@ -2301,6 +2301,7 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .header {
+        display: flex;
         margin: 0;
         padding: 0;
         width: 90%;
@@ -2312,8 +2313,9 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .header h1 {
-        position: relative;
-        left: 25%;
+        /* position: relative; */
+        /* left: 20%; */
+        align-self: center;
         color: #FFF;
         font-family: FlashBack-Demo;
         font-size: 180px;
