@@ -1965,6 +1965,7 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         width: 100%;
         height: 60%;
         margin: 0;
@@ -1974,6 +1975,7 @@ footer .insideFoot .icons li svg:hover {
     }
     
     .contactDetails .contactForm {
+        margin: 0;
         width: 40%;
         display: flex;
         flex-direction: column;
@@ -1984,7 +1986,6 @@ footer .insideFoot .icons li svg:hover {
         text-align: center;
         align-self: center;
         width: 90%;
-        margin-left: -5%;
     }
     
     .contactDetails .contactForm form .inputs {
@@ -2042,7 +2043,6 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails .contactMethods {
         border-left: 1px solid black;
         width: 50%;
-        margin-left: 3%;
     }
     
     .contactDetails .contactMethods hr {
@@ -2502,7 +2502,7 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
         text-align: center;
         height: 70vh;
@@ -2512,7 +2512,7 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails .contactForm {
         margin: 0;
         margin-top: 7%;
-        width: 80%;
+        width: 75%;
         display: flex;
         flex-direction: column;
         height: 90%;
@@ -2527,11 +2527,9 @@ footer .insideFoot .icons li svg:hover {
     
     .contactDetails .contactForm form .inputs {
         display: flex;
-        /* flex-wrap: wrap; */
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
-        /* margin: 2em 2em; */
     }
 
     .contactDetails .contactForm form .inputs .inputHalves {
@@ -2548,13 +2546,12 @@ footer .insideFoot .icons li svg:hover {
     .contactDetails .contactForm form .inputHalf {
         width: 40%;
         padding: 2em 0  0 1em;
-        /* margin-left: 2em; */
     }
     
     
     
     .contactDetails .contactForm form .inputs .msgInput {
-        width: 96%;
+        width: 95.5%;
         padding: 1.5em 0 0 1em;
     }
     
@@ -2580,7 +2577,7 @@ footer .insideFoot .icons li svg:hover {
         font-size: 20px;
         color: #E02626;
         transition: all .3s;
-        /* margin-left: 8%; */
+        margin-left: 2%;
         border: 1px solid #E02626;
     }
     
