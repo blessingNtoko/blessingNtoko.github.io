@@ -404,6 +404,7 @@ nav #logo:hover span#changeColour {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: -2%;
 }
 
 .contactDetails .contactForm form .inputs .input {
