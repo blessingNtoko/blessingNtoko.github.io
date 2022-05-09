@@ -452,11 +452,11 @@ nav #logo:hover span#changeColour {
     color: #E02626;
     border: 1px solid #E02626;
     transition: all .3s;
-    float: left;
-    margin-top: 30px;
+    /* float: left; */
+    margin-top: 5%;
+    margin-left: 1.5%;
     width: 90%;
-    /* margin-left: 135px; */
-    padding: 5px 5px;
+    /* padding: 5px 5px; */
 }
 
 .contactDetails .contactMethods {
