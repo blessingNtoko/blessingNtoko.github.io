@@ -31,6 +31,10 @@ html, body {
     background-color: #212529;
 }
 
+#landingPage {
+    color: white;
+}
+
 .overlay {
     z-index: -50;
     position: absolute;
@@ -39,5 +43,5 @@ html, body {
     min-width: 100%;
     min-height: 100%;
     background-color: black;
-    opacity: .6;
+    opacity: .3;
 }
