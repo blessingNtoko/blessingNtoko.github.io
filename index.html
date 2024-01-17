@@ -6,295 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blessing Ntoko</title>
-    <link rel="stylesheet" href="./assets/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
-<body>
-    <main class="wrapper">
-        <nav id="navigate">
-            <div id="logo">
-                <a href="#">
-                    <span class="highlight">B</span><span id="changeColour">N</span>
-                </a>
-            </div>
-            <ul class="defaultNav">
-                <li><a class="onhover default" href="#">HOME</a></li>
-                <li><a class="onhover default" href="#about-me">ABOUT</a></li>
-                <li><a class="onhover default" href="#my-work">WORK</a></li>
-                <li><a class="active default" href="#contact-me">CONTACT</a></li>
+<body class="d-flex h-100 text-center text-bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section id="landingPage" >
+            <div class="container">
+                <header id="header" class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                        <span class="fs-4">Blessing Ntoko</span>
+                    </a>
 
-            </ul>
-            <div class="burgerMenu">
-                <svg id="openMenu" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-                    class="svg-inline--fa fa-bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="currentColor"
-                        d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384C433.7 288 448 273.7 448 256S433.7 224 416 224zM416 384H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384C433.7 448 448 433.7 448 416S433.7 384 416 384zM416 64H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384C433.7 128 448 113.7 448 96S433.7 64 416 64z">
-                    </path>
-                </svg>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </header>
             </div>
-        </nav>
-        <div id="menu" class="hiddenNav">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="x" class="svg-inline--fa fa-x"
-                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="closeMenu">
-                <path fill="currentColor"
-                    d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z">
-                </path>
-            </svg>
-            <ul>
-                <li><a class="onhover menuClick" href="#">HOME</a></li>
-                <li><a class="onhover menuClick" href="#about-me">ABOUT</a></li>
-                <li><a class="onhover menuClick" href="#my-work">WORK</a></li>
-                <li><a class="active menuClick" href="#contact-me">CONTACT</a></li>
-            </ul>
-        </div>
-        <section id="landing" class="section">
-            <div class="greeting">
-                <span>
-                    Hi There! <br /> I am
-                </span>
-            </div>
-            <div class="header">
-                <h1><span class="highlight">Blessing</span> Ntoko</h1>
-            </div>
-            <div class="tagline">
-                <p>
-                    Fullstack <span class="highlight">Web Developer</span> <br />
-                    Graphic <span class="highlight">Designer</span> <br />
-                    and just the <span class="highlight">problem solver</span>
-                    you are looking for.
+
+            <main class="px-3">
+                <h1>Cover your page.</h1>
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download,
+                    edit
+                    the text, and add your own fullscreen background photo to make it your own.</p>
+                <p class="lead">
+                    <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
                 </p>
-            </div>
-            <div class="down">
-                <a href="#about-me">
-                    <img src="./assets/images/chevron-down.png" alt="Downwards facing chevron">
-                </a>
-            </div>
-        </section>
-        <section id="about-me" class="section">
-            <h2><span class="highlight">About</span> Me</h2>
-            <div class="info">
-                <div id="about-text">
-                    <p>
-                        I am a self-taught <span class="highlight">Web Developer</span> and <span
-                            class="highlight">Graphic Designer</span> with the ability to move freely between the
-                        technical and design aspects
-                        of the digital landscape. Being fluent in both of these departments allows me to provide a
-                        <span class="highlight">comprehensive service</span>
-                        to my clients and create <span class="highlight">solutions</span> that meet their <span
-                            class="highlight">needs</span> and <span class="highlight">wants</span>.
+            </main>
 
-                        The ability to apply myself in both departments is a challenge I relish and wish to expand
-                        upon.
-
-                        I want to see exactly what I can do and become in code, design, and all things digital.
-
-                        <a href="assets/files/Gundo_Blessing_Ntoko_CV.pdf" download="Blessing_Ntoko_CV"><span
-                                class="highlight">Click here</span></a> to download my CV.
-                    </p>
-                </div>
-                <div id="toys">
-                    <div id="toysImages">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="js-square"
-                            class="svg-inline--fa fa-js-square" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512">
-                            <path fill="currentColor"
-                                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z">
-                            </path>
-                        </svg>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5"
-                            class="svg-inline--fa fa-html5" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 384 512">
-                            <path fill="currentColor"
-                                d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z">
-                            </path>
-                        </svg>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="css3-alt"
-                            class="svg-inline--fa fa-css3-alt" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 384 512">
-                            <path fill="currentColor"
-                                d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z">
-                            </path>
-                        </svg>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="node-js"
-                            class="svg-inline--fa fa-node-js" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512">
-                            <path fill="currentColor"
-                                d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-61.7-36.5c-9.2-5.2-4.7-7-1.7-8 12.3-4.3 14.8-5.2 27.9-12.7 1.4-.8 3.2-.5 4.6 .4l47.4 28.1c1.7 1 4.1 1 5.7 0l184.7-106.6c1.7-1 2.8-3 2.8-5V149.3c0-2.1-1.1-4-2.9-5.1L226.8 37.7c-1.7-1-4-1-5.7 0L36.6 144.3c-1.8 1-2.9 3-2.9 5.1v213.1c0 2 1.1 4 2.9 4.9l50.6 29.2c27.5 13.7 44.3-2.4 44.3-18.7V167.5c0-3 2.4-5.3 5.4-5.3h23.4c2.9 0 5.4 2.3 5.4 5.3V378c0 36.6-20 57.6-54.7 57.6-10.7 0-19.1 0-42.5-11.6l-48.4-27.9C8.1 389.2 .7 376.3 .7 362.4V149.3c0-13.8 7.4-26.8 19.4-33.7L204.6 9c11.7-6.6 27.2-6.6 38.8 0l184.7 106.7c12 6.9 19.4 19.8 19.4 33.7v213.1c0 13.8-7.4 26.7-19.4 33.7L243.4 502.8c-5.9 3.4-12.6 5.2-19.4 5.2zm149.1-210.1c0-39.9-27-50.5-83.7-58-57.4-7.6-63.2-11.5-63.2-24.9 0-11.1 4.9-25.9 47.4-25.9 37.9 0 51.9 8.2 57.7 33.8 .5 2.4 2.7 4.2 5.2 4.2h24c1.5 0 2.9-.6 3.9-1.7s1.5-2.6 1.4-4.1c-3.7-44.1-33-64.6-92.2-64.6-52.7 0-84.1 22.2-84.1 59.5 0 40.4 31.3 51.6 81.8 56.6 60.5 5.9 65.2 14.8 65.2 26.7 0 20.6-16.6 29.4-55.5 29.4-48.9 0-59.6-12.3-63.2-36.6-.4-2.6-2.6-4.5-5.3-4.5h-23.9c-3 0-5.3 2.4-5.3 5.3 0 31.1 16.9 68.2 97.8 68.2 58.4-.1 92-23.2 92-63.4z">
-                            </path>
-                        </svg>
-                        <img id="shiftmongo" src="./assets/images/mogodb.png" alt="">
-                        <img id="shiftexpress" src="./assets/images/Expressjs.png" alt="">
-                    </div>
-                </div>
-            </div>
         </section>
-        <div class="parallax parallax1"></div>
-        <section id="my-work" class="section">
-            <h2>My <span class="highlight">Work</span></h2>
-            <div id="works">
-                <article class="work work-1">
-                    <div class="overlay">
-                    </div>
-                    <div class="workText">
-                        <a href='https://glossyglo.z1.web.core.windows.net/'><h2>GlossyGlo</h2></a>
-                    </div>
-                </article>
-                <article class="work work-2">
-                    <div class="overlay">
-                    </div>
-                    <div class="workText">
-                        <a href='https://github.com/blessingNtoko/threesjs_scenegraph_tank'><h2>
-                            ThreeJS Scenegraph Tank GitHub
-                        </h2></a>
-                    </div>
-                </article>
-                <article class="work work-3">
-                    <div class="overlay">
-                    </div>
-                    <div class="workText">
-                        <a href='https://github.com/blessingNtoko/threejs_custombuffergeo'><h2>
-                            ThreeJS Custom Buffer Geometry GitHub
-                        </h2></a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <div class="parallax parallax2"></div>
-        <section id="contact-me" class="section">
-            <h2><span class="highlight">Contact</span> Me</h2>
-            <div class="contactDetails">
-                <div class="contactForm">
-                    <form action="https://formspree.io/f/xyylrkjv" method="post">
-                        <div class="inputs">
-                            <div class="inputHalves">
-                                <div class="input inputHalf">
-                                    <label for="name">NAME</label>
-                                    <input type="text" name="name" id="name">
-                                </div>
-                                <div class="input inputHalf">
-                                    <label for="email">EMAIL</label>
-                                    <input type="email" name="email" id="email">
-                                </div>
-                            </div>
-                            <div class="input msgInput">
-                                <label for="message">MESSAGE</label>
-                                <textarea name="message" id="message" rows="12"></textarea>
-                            </div>
-                            <button type="submit">SUBMIT</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="contactMethods">
-                    <div>
-                        <h1>
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
-                                class="svg-inline--fa fa-envelope" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z">
-                                </path>
-                            </svg>
-                            &nbsp;
-                        </h1>
-                        <a href="mailto:bntoko@gmail.com">bntoko@gmail.com</a>
-                    </div>
-                    <hr>
-                    <div>
-                        <h1>
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
-                                class="svg-inline--fa fa-phone" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z">
-                                </path>
-                            </svg>
-                            &nbsp;
-                        </h1>
-                        <p>068 315 5483</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <h1>
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house-user"
-                                class="svg-inline--fa fa-house-user" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 576 512">
-                                <path fill="currentColor"
-                                    d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.6 483.2 483.9 512 448.5 512H128.1C92.75 512 64.09 483.3 64.09 448V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5H575.8zM288 160C252.7 160 224 188.7 224 224C224 259.3 252.7 288 288 288C323.3 288 352 259.3 352 224C352 188.7 323.3 160 288 160zM256 320C211.8 320 176 355.8 176 400C176 408.8 183.2 416 192 416H384C392.8 416 400 408.8 400 400C400 355.8 364.2 320 320 320H256z">
-                                </path>
-                            </svg>
-                            &nbsp;
-                        </h1>
-                        <p>no. 4 2nd street, Lambton<br>Germiston<br>1401</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer">
-            <div class="insideFoot">
-                <ul class="icons">
-                    <li>
-                        <a href="https://twitter.com/UmbralCreate">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square"
-                                class="svg-inline--fa fa-twitter-square" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8 .2 5.7 .2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3 .6 10.4 .8 15.8 .8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.45 65.45 0 0 1 -29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z">
-                                </path>
-                            </svg>
-                        </a></li>
-                    <li>
-                        <a href="https://www.facebook.com/MediaUmbral/?ref=pages_you_manage">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square"
-                                class="svg-inline--fa fa-facebook-square" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                    d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.3V327.7h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0 -48-48z">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/umbral_media/">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square"
-                                class="svg-inline--fa fa-instagram-square" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                    d="M224 202.7A53.34 53.34 0 1 0 277.4 256 53.38 53.38 0 0 0 224 202.7zm124.7-41a54 54 0 0 0 -30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31 6.43a54 54 0 0 0 -30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33S91 329.3 99.32 350.3a54 54 0 0 0 30.41 30.41c21 8.29 71 6.43 94.31 6.43s73.24 1.93 94.3-6.43a54 54 0 0 0 30.41-30.41c8.35-21 6.43-71.05 6.43-94.33S357.1 182.7 348.8 161.7zM224 338a82 82 0 1 1 82-82A81.9 81.9 0 0 1 224 338zm85.38-148.3a19.14 19.14 0 1 1 19.13-19.14A19.1 19.1 0 0 1 309.4 189.7zM400 32H48A48 48 0 0 0 0 80V432a48 48 0 0 0 48 48H400a48 48 0 0 0 48-48V80A48 48 0 0 0 400 32zM382.9 322c-1.29 25.63-7.14 48.34-25.85 67s-41.4 24.63-67 25.85c-26.41 1.49-105.6 1.49-132 0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.6 0-132 1.29-25.63 7.07-48.34 25.85-67s41.47-24.56 67-25.78c26.41-1.49 105.6-1.49 132 0 25.63 1.29 48.33 7.15 67 25.85s24.63 41.42 25.85 67.05C384.4 216.4 384.4 295.6 382.9 322z">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/blessingNtoko">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github-square"
-                                class="svg-inline--fa fa-github-square" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4 .2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9 .2 36.5 .2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9 .4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7 .6 3.9 1.9 .3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2 .2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7 .9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2 .4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8 .9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1 .9-1.1 2.8-.9 4.3 .6 1.3 1.3 1.8 3.3 .9 4.1zm-9.1-9.1c-.9 .6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9 .9-2.4 .4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5 .9-.9 2.4-.4 3.5 .6 1.1 1.3 1.3 2.8 .4 3.5zm-6.7-7.4c-.4 .9-1.7 1.1-2.8 .4-1.3-.6-1.9-1.7-1.5-2.6 .4-.6 1.5-.9 2.8-.4 1.3 .7 1.9 1.8 1.5 2.6z">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/blessing-ntoko-8a8398178/">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin"
-                                class="svg-inline--fa fa-linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <p>
-                    &copy; <span class="highlight">Umbral</span> Creations | Design: <span class="highlight">Blessing</span> Ntoko
-                </p>
-            </div>
+        <footer class="mt-auto text-white-50">
+            <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
+                    href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
         </footer>
-    </main>
+    </div>
+    <!-- <main class="wrapper d-flex h-100 text-center text-bg-dark"> -->
+    <!-- </main> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
