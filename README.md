@@ -1,1 +1,1 @@
-Umuzi - Build your own personal website project
+My own personal portfolio site
