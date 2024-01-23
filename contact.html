@@ -49,18 +49,110 @@
         </header>
     </div>
 
-    <section id="contactHero" class="gradient-background">
+    <section id="contactHero" class="gradient-background d-flex align-items-center justify-content-center">
         <div class="container col-xxl-8 px-4 pt-5 pb-0">
-          <div class="row flex-lg-row-reverse align-items-center g-5 pt-5 pb-0 mt-5">
-            <div class="col-12 col-sm-12 col-lg-6">
-              <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+            <div class="row flex-lg-row-reverse align-items-center g-5 pt-5 pb-0">
+                <div class="col-lg-12">
+                    <h1 class="display-1 fw-bold lh-1 mb-3 font-monospace text-center" style="color: white">Contact</h1>
+                </div>
+                <!-- <div class="col-12 col-sm-12 col-lg-6">
+                    <img src="./assets/images/contactPic.jpg" class="d-block mx-lg-auto img-fluid rounded-3" alt="Bootstrap Themes"
+                        loading="lazy">
+                </div> -->
             </div>
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 font-monospace text-center">Contact</h1>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
+
+    <section id="contactContent">
+        <div class="container px-4 py-5">
+
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 mt-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <h2 class="fw-bold text-body-emphasis font-monospace">I would love to get in touch with you.</h2>
+                    <p class="text-body-secondary">
+                        Use the form to the right or any one of my details down below to get in touch with me.
+                    </p>
+                    <p class="text-body-secondary">
+                        Let me help you bring that vision to life.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label font-monospace">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label font-monospace">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="floatingTextarea2" class="form-label font-monospace">Message</label>
+                            <textarea class="form-control" placeholder="Type you message here" id="floatingTextarea2" style="height: 100px"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-dark font-monospace">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container px-4 py-5" id="hanging-icons">
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="fs-2 text-body-emphasis font-monospace">Email</h3>
+                            <a href="mailto:email@example.com"
+                                class="text-body-secondary font-monospace">bntoko@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="fs-2 text-body-emphasis font-monospace">Phone</h3>
+                            <p>
+                                068 315 5483
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="fs-2 text-body-emphasis font-monospace">Address</h3>
+                            <p>
+                                no. 4 2nd street, Lambton, Germiston
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
     <div class="container">
         <footer class="py-3 my-4">
