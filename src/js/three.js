@@ -1,18 +1,16 @@
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js";
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js";
-import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js";
-// import { MTLLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/MTLLoader.js";
-// import { OBJLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/OBJLoader.js";
 import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js";
 
 const scene1 = new THREE.Scene();
 const scene2 = new THREE.Scene();
-// scene2.background.color
 const scene3 = new THREE.Scene();
 const renderer1 = new THREE.WebGLRenderer({
   canvas: document.querySelector("#proj1"),
   antialias: true,
 });
+renderer1.setClearColor(0x003A50, 1);
+
 const renderer2 = new THREE.WebGLRenderer({
   canvas: document.querySelector("#proj2"),
   antialias: true,
@@ -23,21 +21,24 @@ const renderer3 = new THREE.WebGLRenderer({
   canvas: document.querySelector("#proj3"),
   antialias: true,
 });
+renderer3.setClearColor(0x313A54, 1);
+
 const canvas1 = renderer1.domElement;
 const canvas2 = renderer2.domElement;
 const canvas3 = renderer3.domElement;
 const camera1 = new THREE.PerspectiveCamera(75, canvas1.clientWidth / canvas1.clientHeight, .1, 1000);
-const camera2 = new THREE.PerspectiveCamera(75, canvas1.clientWidth / canvas1.clientHeight, .1, 1000);
-const camera3 = new THREE.PerspectiveCamera(75);
+const camera2 = new THREE.PerspectiveCamera(75, canvas2.clientWidth / canvas2.clientHeight, .1, 1000);
+const camera3 = new THREE.PerspectiveCamera(75, canvas3.clientWidth / canvas3.clientHeight, .1, 1000);
 const orbitControls1 = new OrbitControls(camera1, renderer1.domElement);
 const orbitControls2 = new OrbitControls(camera2, renderer2.domElement);
 const orbitControls3 = new OrbitControls(camera3, renderer3.domElement);
 const gltfLoader = new GLTFLoader();
-const fbxLoader = new FBXLoader();
 let mesh1;
 let mesh2;
 let mesh3;
-let mixer;
+let mesh1Rotate = true;
+let mesh2Rotate = true;
+let mesh3Rotate = true;
 
 renderer1.setPixelRatio(window.devicePixelRatio);
 renderer2.setPixelRatio(window.devicePixelRatio);
@@ -47,45 +48,32 @@ renderer2.setSize(canvas2.clientWidth, canvas2.clientHeight);
 renderer3.setSize(canvas3.clientWidth, canvas3.clientHeight);
 
 camera1.position.setZ(5);
-camera1.position.setY(-1);
-camera2.position.setZ(20);
+camera1.position.setY(0);
+camera2.position.setZ(25);
 camera2.position.setY(5);
 camera2.position.setX(0);
-camera2.lookAt(0, 0, 0);
-camera3.position.setZ(5);
-camera3.position.setY(2);
-
-// Torus
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0xff5500 });
-// const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-const torus = new THREE.Mesh(geometry, material);
+camera3.position.setZ(4);
+camera3.position.setY(0);
+// camera3.lookAt(0, 0, 0);
 
 gltfLoader.load("./assets/3D_Models/cartoonHeadSculpt4.glb", function(gltf) {
     mesh1 = gltf.scene;
+    mesh1.position.y = 1;
     scene1.add(mesh1);
-
-    gltf.animation
-
 });
 
 gltfLoader.load("./assets/3D_Models/editingObjects.glb", function(gltf) {
     mesh2 = gltf.scene;
+    camera2.lookAt(mesh2.position);
     scene2.add(mesh2);
-
 });
 
 gltfLoader.load("./assets/3D_Models/WeShallSee.glb", function(gltf) {
     mesh3 = gltf.scene;
+    mesh3.position.y = -2;
     scene3.add(mesh3);
 
-    // mixer = new THREE.AnimationMixer(mesh3);
-    // let action = mixer.clipAction(gltf.animations[0]);
-    // action.play();
-
 });
-
-// scene1.add(torus);
 
 // Lights
 
@@ -107,8 +95,8 @@ const ambientLight1 = new THREE.AmbientLight(0xffffff);
 const ambientLight2 = new THREE.AmbientLight(0xffffff);
 const ambientLight3 = new THREE.AmbientLight(0xffffff);
 scene1.add(pointLight1, ambientLight1, directionalLight1);
-scene2.add(pointLight2, ambientLight2, directionalLight2);
-scene3.add(ambientLight3, directionalLight3);
+scene2.add( ambientLight2, directionalLight2);
+scene3.add(pointLight3, ambientLight3, directionalLight3);
 
 function render() {
   renderer1.render(scene1, camera1);
@@ -137,36 +125,20 @@ function onWindowResize() {
   render();
 }
 
-// const resizeObserver = new ResizeObserver((entries) => {
-//   for (const entry of entries) {
-//     if (entry.contentBoxSize) {
-//       if (entry.contentBoxSize[0]) {
-//         entry.contentBoxSize[0].inlineSize / entry.contentBoxSize[0].blockSize;
-//       }
-//     }
-//   }
-
-//   console.log("size changed", entries);
-// });
-
-// resizeObserver.observe(canvas1);
-
 function animate() {
   requestAnimationFrame(animate);
 
-  if (mesh1) {    
+  if (mesh1 && mesh1Rotate) {    
       mesh1.rotation.y += 0.007;
   }
-  if (mesh2) {    
+  if (mesh2 && mesh2Rotate) {    
       mesh2.rotation.y += 0.007;
   }
 
-  if (mesh3) {
+  if (mesh3 && mesh3Rotate) {
     mesh3.rotation.y += 0.007;
 
   }
-
-//   torus.rotation.z += 0.01;
 
   render();
 }
