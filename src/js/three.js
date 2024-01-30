@@ -33,12 +33,25 @@ const orbitControls1 = new OrbitControls(camera1, renderer1.domElement);
 const orbitControls2 = new OrbitControls(camera2, renderer2.domElement);
 const orbitControls3 = new OrbitControls(camera3, renderer3.domElement);
 const gltfLoader = new GLTFLoader();
+const mesh1Btn = document.getElementById("mesh1Btn");
+const mesh2Btn = document.getElementById("mesh2Btn");
+const mesh3Btn = document.getElementById("mesh3Btn");
 let mesh1;
 let mesh2;
 let mesh3;
 let mesh1Rotate = true;
 let mesh2Rotate = true;
 let mesh3Rotate = true;
+
+mesh1Btn.addEventListener("click", function() {
+  mesh1Rotate = !mesh1Rotate;
+});
+mesh2Btn.addEventListener("click", function() {
+  mesh2Rotate = !mesh2Rotate;
+});
+mesh3Btn.addEventListener("click", function() {
+  mesh3Rotate = !mesh3Rotate;
+});
 
 renderer1.setPixelRatio(window.devicePixelRatio);
 renderer2.setPixelRatio(window.devicePixelRatio);
