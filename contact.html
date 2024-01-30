@@ -77,17 +77,17 @@
                     <form action="https://formspree.io/f/xyylrkjv" method="post">
                         <div class="mb-3">
                             <label for="name" class="form-label font-monospace">Name</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" name="name">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label font-monospace">Email address</label>
                             <input type="email" class="form-control" id="email"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" name="email">
                             <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label font-monospace">Message</label>
-                            <textarea class="form-control" placeholder="Type you message here" id="message" style="height: 100px"></textarea>
+                            <textarea class="form-control" placeholder="Type you message here" id="message" style="height: 100px" name="message"></textarea>
                           </div>
                         <button type="submit" class="btn btn-dark font-monospace">Submit</button>
                     </form>
